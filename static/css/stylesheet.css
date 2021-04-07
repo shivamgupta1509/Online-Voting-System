@@ -1,0 +1,125 @@
+body{
+    background-color: #f8f5f1;
+}
+#voting_symbol{
+    width: 15%;
+}
+.navbar-brand{
+    font-size: 38px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#page-container {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 3rem;
+    min-height: 100vh;
+  }
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    height: 3rem;           /* Footer height */
+    text-align: center;
+    background-color: #35b1eb;
+    font-weight: bold;
+  }
+
+.carousel-item > img{
+    height: 590px;
+    border-radius: 150px;
+    border-style: groove;
+    box-shadow: 5px 7px 8px rgba(0, 0, 0, 0.4);
+}
+.carousel-caption {
+    bottom: 4.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 900;
+    color: #fff;
+    /* background-color: aqua; */
+}
+.card-header{
+    background-color: #ce1212;
+    color: #fff;
+}
+.card-body{
+    background-color: #eeebdd;
+    color: #810000;
+}
+.card-text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.contactimg{
+    position: relative;
+    width: 100%;
+}
+.contactimg img{
+    width: 100%;
+}
+.con-mail{
+    position: absolute;
+    width: 100%;
+    top: 46%;
+    left: 53%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: #e1e4f1;
+}
+.con-phone{
+    position: absolute;
+    width: 100%;
+    top: 260%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: #e1e4f1;
+}
+.con-add{
+    position: absolute;
+    width: 100%;
+    top: 260%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: #e1e4f1;
+}
+
+#contactform{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+#about{
+    /* width: 100%; */
+    margin-top: 17px;
+    padding: 45px;
+    background-color: #063ea5e0;
+    /* min-height: 100vh; */
+}
+#about_title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 70px;
+    color: #fff;
+    border-left: 15px;
+    border-style: none none none solid ;
+    padding: 15px;
+    border-color: #f7ea00;
+}
+#about_text{    
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    color: #feffde;
+}
+#student{
+    font-family: fantasy;
+    color: #feffde;
+}
+#student-detail{
+    color: #f7ea00;
+    font-size: 20px;
+    margin-left: 60px;
+    padding-left: 20px;
+    font-family: monospace;
+}
+

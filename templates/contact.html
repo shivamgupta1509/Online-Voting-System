@@ -8,7 +8,8 @@
     </div>
     <div class="row mt-2">
         <div class="col-5">
-            <form id="contactform" name="contactform">
+            <form id="contactform" name="contactform" method="POST" action="/contact">
+            {% csrf_token %}
                 <div class="row m-3">
                     <div class="col-3">
                         <label for="name" class="form-label">Name : </label>
@@ -50,12 +51,12 @@
         </div>
         <div class="col-6">
             <div class="row contactimg">
-            <img class="img-fluid" src="/static/images/contact2.png" alt="contact_us">
-            <spam class="con-mail">votertimes2021@gmail.com</span><br>
-            <spam class="con-phone">022-223322</span><br>
-            <spam class="con-add">Kandiwali East, Mumbai</span>
+                <img class="img-fluid" src="/static/images/contact2.png" alt="contact_us">
+                <spam class="con-mail">votertimes2021@gmail.com</span><br>
+                    <spam class="con-phone">022-223322</span><br>
+                        <spam class="con-add">Kandiwali East, Mumbai</span>
             </div>
-        <div>
-    </div>
-</div>
-{% endblock body %}
+            <div>
+            </div>
+        </div>
+        {% endblock body %}

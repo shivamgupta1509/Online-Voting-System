@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  background: linear-gradient(160deg,#e0ac67,#fff, #7de782);
+  
+	/* background-size: 400% 400%;
+	animation: gradient 10s ease infinite; */
+
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  counter-reset: step;
+}
+
+#voterInputForm{
+  width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+  text-overflow: hidden;
+}
+
+fieldset{
+  background: #6693e7;
+  border: 0 none;
+  border-radius: 5px;
+  padding: 30px 40x;
+  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  
+}
+
+fieldset:not(:first-of-type){
+  display:none;
+}
+
+.fs-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #2c3e50;
+  margin: 10px 0px;
+  padding-top: 5px;
+}
+.fstitle{
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 10px 0px;
+  padding-top: 20px;
+}
+
+input, textarea, .back{
+  padding: 14px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 80%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2c3e50;
+  font-size: 13px;
+}
+
+input:focus, textarea:focus, .back{
+  border-color: #a0a0a0;
+  outline: none;
+  /* color: #637373; */
+}
+
+.action-button {
+  width: 100px;
+  background: #ff9a76;
+  font-weight: bold;
+  color: #fff;
+  transition: 150ms;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+
+.action-button:hover, .action-button:focus{
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+  background: #ff9068;
+}
+
+.back{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.error_msg{
+    text-align: center;
+    margin-top: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.error_voter{
+	color: #D8000C;
+	background-color: #FFBABA;
+	padding: 10px;
+  margin-bottom: 5px;
+}
+
+/* @keyframes next{
+  from{
+    transform: translate(15px);
+  }
+  to{
+    transform: translate(0px);
+  }
+} */
+
+
+/* 
+@keyframes gradient{
+  0% {
+    background-position: 25% 50%;
+  }
+  25%{
+    background-position: 50% 75%;
+  }
+	50% {
+		background-position: 75% 100%;
+  }
+  75%{
+    background-position: 100% 75%;
+  }
+	100% {
+		background-position: 75% 25%;
+	}
+} */
+

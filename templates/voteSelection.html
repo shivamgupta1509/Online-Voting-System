@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Election_choose{% endblock title %}
+{% block body %}
+<div class="container">
+    <div class="m-4 select_head" id="select_head">
+        <span >Select Elections Region</span>
+    </div>
+    <form method="POST" action="voterInput">
+    {% csrf_token %}
+        <div class="row m-4">
+            {% for election in election_details %}
+                {% if election.election_date >= today %}
+                <div class="col-4 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{election.election_img.url}}" style="width: 18rem; height: 10rem" class="card-img-top" alt="{{election.election_img.name}}">
+                        <div class="card-body">
+                            <h5 class="card-title elstate">{{election.election_name}}</h5>
+                            <p class="card-text">Regardless of who wins, an election should be a time for optimism and fresh approaches.</p>
+                            <button class="btn btn-primary" type="submit" value="{{ election.election_name }}" name="election-name">Give Vote</button>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </form>
+</div>
+{% endblock body %}

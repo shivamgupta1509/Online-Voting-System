@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login | Voter_Times</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/login.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+</head>
+
+<body>
+	<!-- multistep form -->
+	<form action="voterInput" method="POST" id="voterInputForm" name="voterInputForm">
+    {% csrf_token %}
+		<p style="margin-top: 200px;"></p>
+		<!-- fieldsets -->
+		<fieldset>
+			<h2 class="fstitle">{{ election_name }}</h2>
+			<h2 class="fs-title">Login to your Account</h2>
+			{% if messages %}
+			{% for message in messages %}
+			<div class="error_voter">
+				<strong>{{ message }} <i class="fas fa-exclamation"></i> </strong>
+			</div>
+			{% endfor %}
+			{% endif %}
+			<input type="text" name="voterid" placeholder="VoterId" required />
+            <input type="text" onfocus="(this.type='date')" name="dob" placeholder="Date of Birth" value="{{placement.date|date:"Y-m-d" }}" required /><br>
+            <a href="voteSelection" class="action-button back" style="text-decoration: none;">Back</a>
+			<button type="submit" name="submit" class="submit action-button" value="{{ election_name }}">Login</buttomm
+		</fieldset>
+	</form>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</body>
+
+</html>

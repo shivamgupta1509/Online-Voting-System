@@ -14,7 +14,7 @@
     {% comment %} Css file {% endcomment %}
     <link rel="stylesheet" href="/static/css/stylesheet.css">
 
-    <title>{% block title %}{% endblock title %} | Voter_Times</title>
+    <title>{% block title %}{% endblock title %} | Voting_Times</title>
     
   </head>
   <body>
@@ -34,6 +34,15 @@
               </div>
           </div>
       </nav>
+
+      {% if messages %}
+      {% for message in messages %}
+      <div class="alert alert-{% if message.tags == error %}{{ danger }}{% else %}{{ message.tags }}{% endif %} alert-dismissible fade show my-0" role="alert">
+        <strong>{{ message }}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {% endfor %}
+      {% endif %}
 
       {% block body %}{% endblock body %}
 

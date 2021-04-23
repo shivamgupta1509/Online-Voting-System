@@ -1,5 +1,9 @@
+/* html{
+    height: 100vh;
+    background-color: linear-gradient(160deg,#e0ac67,#fff, #7de782);
+  } */
 body{
-    background-color: #f8f5f1;
+    background-color: #f9fae2;
 }
 #voting_symbol{
     width: 15%;
@@ -10,7 +14,7 @@ body{
 }
 #page-container {
     position: relative;
-    padding-top: 100px;
+    padding-top: 97.81px;
     padding-bottom: 3rem;
     min-height: 100vh;
   }
@@ -91,8 +95,7 @@ body{
 }
 #about{
     /* width: 100%; */
-    margin-top: 17px;
-    padding: 45px;
+    padding: 65px;
     background-color: #063ea5e0;
     /* min-height: 100vh; */
 }
@@ -123,3 +126,14 @@ body{
     font-family: monospace;
 }
 
+.select_head{
+    font-size: 50px; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    text-decoration: underline;
+    text-align: center;
+}
+.elstate{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-decoration: underline;
+}
